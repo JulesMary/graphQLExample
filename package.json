@@ -1,0 +1,33 @@
+{
+  "name": "graphqlexample",
+  "version": "1.0.0",
+  "description": "A simple example of a graphQL server using graphql-yoga",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --watch src src/index.js",
+    "startWindows": "nodemon --watch src src\\index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulesMary/graphQLExample.git"
+  },
+  "keywords": [
+    "graphQL",
+    "graphQL-yoga",
+    "node",
+    "api"
+  ],
+  "author": "Jule Martensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulesMary/graphQLExample/issues"
+  },
+  "homepage": "https://github.com/JulesMary/graphQLExample#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
