@@ -13,12 +13,10 @@ const users = [
   {
     name: 'Albert Einstein',
     age: 140,
-    alive: false,
   },
   {
     name: 'Bibi Blocksberg',
     age: 39,
-    alive: true,
   },
 ];
 
@@ -41,7 +39,6 @@ const typeDefs = `
   type User {
     name: String!
     age: Int!
-    alive: Boolean!
   }
 `;
 
@@ -77,6 +74,7 @@ const resolvers = {
 
 };
 
+//server
 const pubsub = new PubSub();
 const server = new GraphQLServer({
   typeDefs,
