@@ -20,6 +20,17 @@ const users = [
   },
 ];
 
+const items = [
+  {
+    title: 'Book',
+    price: 10,
+  },
+  {
+    title: 'Coffee',
+    price: 1.50,
+  }
+];
+
 //typeDefs
 
 const typeDefs = `
