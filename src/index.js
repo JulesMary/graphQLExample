@@ -20,17 +20,6 @@ const users = [
   },
 ];
 
-const items = [
-  {
-    title: 'Book',
-    price: 10,
-  },
-  {
-    title: 'Coffee',
-    price: 1.50,
-  }
-];
-
 //typeDefs
 
 const typeDefs = `
@@ -65,8 +54,7 @@ const resolvers = {
     createUser: (_, {name, age}) => {
       const newUser = {
         name: name,
-        age: age,
-        alive: true
+        age: age
       };
       users.push(newUser);
       //publish to subscription, name of the payload must equal the name of subscription
